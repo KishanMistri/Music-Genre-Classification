@@ -9,3 +9,5 @@ Some information about kernel SVM:
   Kernel SVM use different type of function which transform data into new dimension where data is linearly saperable.
   Here is good reference: http://crsouza.com/2010/03/17/kernel-functions-for-machine-learning-applications/
   
+So after training our SVM classifier we will test on any file.
+Here I have selected 'isSignificant' level which is minimum probability to classify our test file.[In my code : 0.5]
