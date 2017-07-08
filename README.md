@@ -1,5 +1,6 @@
 # Music-Genre-Classification
 Classification base on kernel SVM
+Database Used: http://opihi.cs.uvic.ca/sound/genres.tar.gz [1.2GB]
 
 Here we are using kernel SVM not 'Linear' because our dataset will not be linearly saperable if we visualize.So Here I am using pyAudioAnanlysis [Reference: https://github.com/tyiannak/pyAudioAnalysis ] library to extract all 34 feature from music file. Here I have used '*.wav' but we have function in this library which can be used to convert all type of extension to .wav format. 
 
