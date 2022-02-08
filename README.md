@@ -14,4 +14,22 @@
 So after training our SVM classifier we will test on any file.
 - I have selected 'isSignificant' level which is minimum probability to classify our test file.[In my code : 0.6]
 
+# Screens
+- Base-view
+
+![Base-View](https://user-images.githubusercontent.com/20341930/153004011-5f1ec146-0984-4517-9be0-1e8fd0f74bb3.png)
+
+- Upload file format enforcing
+
+![Upload-filtering-to-wav](https://user-images.githubusercontent.com/20341930/153004040-e91575c5-d199-4170-83ff-dcfebcaecc1f.png)
+
+- Prediction of uploaded file
+ 
+![Test-Prediction-screen](https://user-images.githubusercontent.com/20341930/153004058-c00e28f5-f3f2-4f2e-84b8-551a43e72b43.png)
+
+- Output when it fails to predict based on significance set
+
+![Failed-to-classify](https://user-images.githubusercontent.com/20341930/153004078-deea8ca6-f2a9-43c8-982b-87f1f1d13ad5.png)
+
+
 > Note: This is a utilisation of library to perform classification to get understanding of Kernel SVM.
