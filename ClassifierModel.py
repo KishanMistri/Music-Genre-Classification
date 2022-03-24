@@ -6,7 +6,7 @@ Spyder Editor
 from pyAudioAnalysis import audioTrainTest as aT
 import os
 
-dirname = '/home/hitesh/audioClassificationNew/trainingData'
+dirname = '/home/kmistri/audioClassificationNew/trainingData'
 
 subdirectories = os.listdir(dirname)[:10]
 
