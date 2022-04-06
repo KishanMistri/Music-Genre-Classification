@@ -3,36 +3,29 @@
 """
 Created on Wed Jul  5 10:17:03 2017
 
-@author: hitesh
+@author: kmistri
 """
 import numpy as np
-
 from pyAudioAnalysis import audioTrainTest as aT
-
-
 from Tkinter import *
 import Tkinter,tkFileDialog
 import tkMessageBox
-
-
 
 def loadFile():
     global fileName
     fileName=tkFileDialog.askopenfilename()
     print fileName;
     selection = "Selected File : " + str(fileName)
-    label1.config(text = selection)
-        
+    label1.config(text = selection)  
     try:
         print (fileName)
-        
         global x
-        
         f1=open(fileName,"r")
         x=f1.read()
         f1.close()
     except:
         print("NO such File")
+
 def Test():
     isSignificant = 0.5 #try different values.
     
@@ -56,9 +49,9 @@ def Test():
       
 root=Tkinter.Tk();
 root.configure(background='#5d5a58')
-
 root.minsize(width=500,height=200)
 root.maxsize(width=800,height=600)
+
 load=Tkinter.Button(root, text="Choose a File", bg = "#880e4f" ,fg = "#ffffff", command=loadFile, width=70 , font = "Verdana 10 bold", activebackground="#b71c1c", activeforeground="#ffffff")
 load.pack(pady=10);
 
@@ -79,10 +72,6 @@ label4 = Tkinter.Label(root , text = "Accuracy : " , bg = "#5d5a58" ,fg = "#ffeb
 label4.pack(padx=20)
 
 root.mainloop()
-
-
-
-
 
 
 
