@@ -5,6 +5,7 @@
 - Database Used: http://opihi.cs.uvic.ca/sound/genres.tar.gz [1.2GB]
 - We are using kernel SVM not 'Linear' because our dataset will not be linearly saperable if we visualize.So Here I am using pyAudioAnanlysis [Reference: https://github.com/tyiannak/pyAudioAnalysis ] library to extract all 34 feature from music file. 
 - When our features are extracted in a vector format we will feed these data to SVM model,but as mentioned before it is not possible to saperate linearly.So we are using kernel SVM.
+- Features extracted using pyaudioanalysis library.
 
 # Some information about kernel SVM:
 - Kernel SVM use different type of function which transform data into new dimension where data is linearly saperable.
