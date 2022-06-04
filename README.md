@@ -7,6 +7,22 @@
 - When our features are extracted in a vector format we will feed these data to SVM model,but as mentioned before it is not possible to saperate linearly.So we are using kernel SVM.
 - Features extracted using pyaudioanalysis library.
 
+# Feature Details:
+
+|Feature Name | Description|
+| ------------- | ------------- |
+|Zero-Crossing Rate|	The rate of sign changes of the signal during the duration of a particular frame.|
+|Energy	|The sum of squares of the signal values, normalized by the respective frame length.|
+|Entropy of Energy	|The entropy of sub-frames normalized energies. It can be interpreted as a measure of abrupt changes.|
+|Spectral Centroid|	The center of gravity of the spectrum.|
+|Spectral Spread	|The second central moment of the spectrum.|
+|Spectral Entropy	|The entropy of the normalized spectral energies for a set of sub-frames.|
+|Spectral Flux|	The squared difference between the normalized magnitudes of the spectra of the two successive frames.|
+|Spectral Rolloff|	The frequency below which 90% of the magnitude distribution of the spectrum is concentrated.|
+|MFCCs (9-21)	|Mel Frequency Cepstral Coefficients form a cepstral representation where the frequency bands are not linear but distributed according to the mel-scale.|
+|Chroma Vector (22-33)|	A 12-element representation of the spectral energy where the bins represent the 12 equal-tempered pitch classes of western-type music (semitone spacing).|
+|Chroma Deviation	|The standard deviation of the 12 chroma coefficients.|
+
 # Some information about kernel SVM:
 - Kernel SVM use different type of function which transform data into new dimension where data is linearly saperable.
   - Here is good reference: http://crsouza.com/2010/03/17/kernel-functions-for-machine-learning-applications/
